@@ -1,5 +1,5 @@
 :root{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     background-color:#f0f0f0;
@@ -92,6 +92,10 @@ div#pop-up-container{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     justify-items:center;
     align-items: center;
+}
+
+div.pop-up-paragraph-containers{
+    padding:1em;
 }
 
 section.pop-up-body{

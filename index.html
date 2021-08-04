@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promo Landing Page Template</title>
     <script src="js/promo-landing-pages.js" defer></script>
+    <script src="js/validator.js" defer></script>
     <link rel="stylesheet" href="css/promo-landing-pages.css">
 </head>
 <body>
@@ -45,22 +46,22 @@
             </article>
         </section>
         <section id="lead-form-container">
-            <form action="https://s192516.t.eloqua.com/e/f2">
+            <form action="https://s192516.t.eloqua.com/e/f2" onsubmit="validateFields()">
                 <div>
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <input type="text" id="firstName" name="firstName" required="required">
                 </div>
                 <div>
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <input type="text" id="lastName" name="lastName" required="required">
                 </div>
                 <div>
                     <label for="mobileNumber">Mobile Number</label>
-                    <input type="tel" id="mobileNumber" name="mobileNumber">
+                    <input minlength="11" maxlength="12" pattern="[0-9]+" type="text" id="mobileNumber" name="mobileNumber">
                 </div>
                 <div>
                     <label for="emailAddress">Email Address</label>
-                    <input type="text" id="emailAddress" name="emailAddress" required>
+                    <input type="email" id="emailAddress" name="emailAddress" required="required">
                 </div>
                 <div>
                     <input style="display:inline;" type="checkbox" name="hasSellerInfo" id="hasSellerInfo" unchecked>
@@ -91,7 +92,7 @@
             <div class="pop-up-item-container">
                 <img src="#" alt="" id="pop-up-image">
             </div>
-            <div class="pop-up-item-container">    
+            <div class="pop-up-item-container pop-up-paragraph-containers">    
                 <p class="pop-up-paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam nihil quis nam! Fugiat dolores iste commodi accusantium, molestias quo sequi rerum inventore, dolorem error laborum consequuntur, voluptate nostrum tempore!
                 </p>

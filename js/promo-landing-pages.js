@@ -43,7 +43,10 @@ for(let i=0;i<promoImage.length;i++){
 
 
 function validateFields(){
-    
+    const mobileNumber = document.getElementById("mobileNumber")
+    if(mobileNumber.value.length != 11 || 13){
+        console.log("Incorrect character count. ")
+    }
 }
 
 // Close the pop-up window when clicked outside the content

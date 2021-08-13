@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marina Spatial Promo Landing Page Form</title>
+    <title>FuturaByFilinvest | Marina Spatial</title>
     <script src="../js/promo-landing-pages.js" defer></script>
+    <script src="../js/validator.js" defer></script>
     <link rel="stylesheet" href="../css/promo-landing-pages.css">
 </head>
 <body>
@@ -15,54 +16,47 @@
         </section>
     </header>
     <main>
-        <section>
-            <p>
-                Real estate is one of the safest and most stable investments out there &mdash; and if you can afford P7,000
-                a month, you can invest in a condo unit with Marina Spatial's Live on the Bright Side Deals!
+        <section class="caption">
+            <p class="caption-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam nihil quis nam! Fugiat dolores iste commodi accusantium, molestias quo sequi rerum inventore, dolorem error laborum consequuntur, voluptate nostrum tempore!
             </p>
-            <p>
-                Enjoy this low monthly payment for a limited-time only &mdash; with a 30-month DP extension via 10/90 bank financing. With Marina Spatial's prime address and refreshing amenities, it will soon worth more than its buying price today. Your dream of a secure futura is now achievable with its limited-time offer.
+            <p class="caption-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi harum aliquam excepturi natus, iure placeat consequatur illo doloremque fuga consectetur ullam ipsa fugit corrupti quas magnam ut est temporibus.
             </p>
-            <p>
-                Avail Now! Offer until July 31, 2021 only. PM us or call (0917) 545-7788 / (0917) 595-7788. Visit <a href="https://futurabyfilinvest.com/project/marina-spatial" target="_blank">https://futurabyfilinvest.com/project/marina-spatial</a>.
+            <p class="caption-paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, doloremque reprehenderit ex quia harum molestias eum libero voluptate pariatur? Tempore soluta, at maxime aut enim deleniti veniam aperiam eveniet accusamus.
             </p>
-            <p>
-                LS No. 17854 | Completion Date: ______ | Owned and developed by Filinvest Land, Inc. | EJ Blanco Ave., Brgy. Piapi,
-                Dumageuete City, Negros Oriental.
+            <p class="caption-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolores voluptates corrupti est omnis corporis quibusdam accusamus optio. Ducimus at explicabo tenetur. Delectus, possimus id dolorum voluptas praesentium odit veniam?
             </p>
         </section>
-        <h3 style="text-align: center;">Promos</h3>
+        <h3 style="text-align: center;">Available Promos</h3>
         <section class="promos">
             <article class="promo-details">
-                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7B2bf298f2-58f7-4ca3-8152-3f105e870ded%7D_FA_CM-2021-02945_Marina_Spatial_Dumaguete_-_Promo_Material_-_July_2021%281%29.jpg" 
-            alt="Marina Spatial Non-RFO Promo" class="promo-image">
-            </article>
-            <article class="promo-details">
-                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7B2bf298f2-58f7-4ca3-8152-3f105e870ded%7D_FA_CM-2021-02945_Marina_Spatial_Dumaguete_-_Promo_Material_-_July_2021%281%29.jpg" 
-            alt="Marina Spatial Non-RFO Promo" class="promo-image">
-            </article>
-            <article class="promo-details">
-                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7B2bf298f2-58f7-4ca3-8152-3f105e870ded%7D_FA_CM-2021-02945_Marina_Spatial_Dumaguete_-_Promo_Material_-_July_2021%281%29.jpg" 
-            alt="Marina Spatial Non-RFO Promo" class="promo-image">
+                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7B32e96536-701a-4872-a3cf-170471bfa8a5%7D_2021-10_Marina-Spatial-Non-RFO-Stretched-DP-optimized.jpg" alt="Marina Spatial Non-RFO Stretched Downpayment" class="promo-image">
+                <button class="promo-select-button" promo="test1">Select</button>
             </article>
         </section>
         <section id="lead-form-container">
-            <form action="">
+            <form action="https://s192516.t.eloqua.com/e/f2" onsubmit="validateFields()">
+                <div>
+                    <h3>Interested? Inquire now!</h3>
+                </div>
                 <div>
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName">
+                    <input type="text" id="firstName" name="firstName" required="required">
                 </div>
                 <div>
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName">
+                    <input type="text" id="lastName" name="lastName" required="required">
                 </div>
                 <div>
                     <label for="mobileNumber">Mobile Number</label>
-                    <input type="tel" id="mobileNumber" name="mobileNumber">
+                    <input minlength="11" maxlength="12" pattern="[0-9]+" type="text" id="mobileNumber" name="mobileNumber">
                 </div>
                 <div>
                     <label for="emailAddress">Email Address</label>
-                    <input type="text" id="emailAddress" name="emailAddress">
+                    <input type="email" id="emailAddress" name="emailAddress" required="required">
                 </div>
                 <div>
                     <input style="display:inline;" type="checkbox" name="hasSellerInfo" id="hasSellerInfo" unchecked>
@@ -71,23 +65,51 @@
                 <section id="seller-information">
                     <div>
                         <label for="sellerName">Seller Name</label>
-                        <input type="text">
+                        <input type="text" id="sellerName" name="sellerName">
                     </div>
                     <div>
                         <label for="">Seller Email Address</label>
-                        <input type="email">
+                        <input type="email" id="sellerEmailAddress" name="sellerEmailAddress">
                     </div>
                 </section>
                 <div>
+                    <input type="hidden" name="projectName" value="Marina Spatial">
+                    <input type="hidden" name="selectedPromo" id="selected-promo">
+                    <input type="hidden" name="elqFormName" value="projectLandingPagePromosForm">
+                    <input type="hidden" name="elqSiteID" value="192516">
                     <input type="submit" value="Submit" style="display:block;margin:0 auto;">
                 </div>
             </form>
         </section>
     </main>
     <div id="pop-up-container">
-        <section style="width:500px;height:500px; background-color:white;">
-            <img src="#" alt="" id="pop-up-image">
+        <section class="pop-up-body">
+            <div class="pop-up-item-container">
+                <img src="#" alt="" id="pop-up-image">
+            </div>
         </section>
     </div>
+
+    <script type='text/javascript'><!--//
+        var timerId = null, timeout = 5;
+        //--></script>
+        <script type='text/javascript'><!--//
+        function WaitUntilCustomerGUIDIsRetrieved() {
+        if (!!(timerId)) {
+            if (timeout == 0) {
+        return;
+        }
+        if (typeof this.GetElqCustomerGUID === 'function') {
+                document.forms["projectLandingPagePromosForm"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+        return;
+        }
+        timeout -= 1;
+        }
+        timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
+        return;
+        }
+        window.onload = WaitUntilCustomerGUIDIsRetrieved;
+        _elqQ.push(['elqGetCustomerGUID']);
+        //--></script>
 </body>
 </html>

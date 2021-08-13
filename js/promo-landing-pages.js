@@ -77,3 +77,7 @@ for (let i=0;i<promos.length;i++){
         return
     })
 }
+
+promos = [
+    ""
+]

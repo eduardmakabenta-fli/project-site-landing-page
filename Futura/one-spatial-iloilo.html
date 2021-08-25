@@ -12,37 +12,28 @@
 <body>
     <header>
         <section>
-            <h1 style="color: #b22222">One Spatial Iloilo</h1>
+            <h1 style="color:#b22222;"><span style="font-weight:100;">One</span> Spatial Iloilo</h1>
         </section>
     </header>
     <main>
         <section class="caption">
             <p class="caption-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam nihil quis nam! Fugiat dolores iste commodi accusantium, molestias quo sequi rerum inventore, dolorem error laborum consequuntur, voluptate nostrum tempore!
-            </p>
-            <p class="caption-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi harum aliquam excepturi natus, iure placeat consequatur illo doloremque fuga consectetur ullam ipsa fugit corrupti quas magnam ut est temporibus.
-            </p>
-            <p class="caption-paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, doloremque reprehenderit ex quia harum molestias eum libero voluptate pariatur? Tempore soluta, at maxime aut enim deleniti veniam aperiam eveniet accusamus.
-            </p>
-            <p class="caption-paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolores voluptates corrupti est omnis corporis quibusdam accusamus optio. Ducimus at explicabo tenetur. Delectus, possimus id dolorum voluptas praesentium odit veniam?
+                Urban living takes on a refreshing dimensions at One Spatial Iloilo, a low-density, mid-rise condo development that offers scenic views of the cityscape, Iloilo River, and Guimaras Island from various parts of the community. Sprawling over 9,232 square meters, you get more room to breathe with 60% of the community dedicated to open spaces and amenities. Live and do more in this secure and modern enclave strategically located in Mandurriao. 
             </p>
         </section>
         <h3 style="text-align: center;">Available Promos</h3>
         <section class="promos">
             <article class="promo-details">
-                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7Bfcfc8469-1660-4aac-9368-64eb4044c495%7D_2021-10_One-Spatial-Iloilo-Non-RFO-1BR-Stretched-DP-optimized.jpg" alt="One Spatial Iloilo RFO 1-BR Stretched DP" class="promo-image">
+                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7Bfcfc8469-1660-4aac-9368-64eb4044c495%7D_2021-10_One-Spatial-Iloilo-Non-RFO-1BR-Stretched-DP-optimized.jpg" alt="One Spatial Iloilo RFO 1-BR Stretched DP" class="promo-image" promo="RFO 1-BR">
                 <button class="promo-select-button" promo="RFO 1-BR">Select</button>
             </article>
             <article class="promo-details">
-                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7Bfb338c81-9ecb-48b3-a5dc-a87703260e11%7D_2021-10_One-Spatial-Iloilo-Non-RFO-2BR-Stretched-DP-optimized.jpg" alt="" class="promo-image">
+                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7Bfb338c81-9ecb-48b3-a5dc-a87703260e11%7D_2021-10_One-Spatial-Iloilo-Non-RFO-2BR-Stretched-DP-optimized.jpg" alt="" class="promo-image" promo="Non-RFO 2-BR">
                 <button class="promo-select-button" promo="Non-RFO 2-BR">Select</button>
             </article>
         </section>
         <section id="lead-form-container">
-            <form action="https://s192516.t.eloqua.com/e/f2" onsubmit="validateFields()">
+            <form action="https://s192516.t.eloqua.com/e/f2">
                 <div>
                     <label for="firstName">First Name</label>
                     <input type="text" id="firstName" name="firstName" required="required">
@@ -74,19 +65,46 @@
                     </div>
                 </section>
                 <div>
-                    <input type="hidden" name="projectName" value="Marina Spatial">
+                    <input type="hidden" name="projectName" value="One Spatial Iloilo">
                     <input type="hidden" name="selectedPromo" id="selected-promo">
                     <input type="hidden" name="elqFormName" value="projectLandingPagePromosForm">
                     <input type="hidden" name="elqSiteID" value="192516">
-                    <input type="submit" value="Submit" style="display:block;margin:0 auto;">
+                    <input type="submit" value="Submit" style="display:block;margin:0 auto;" disabled>
                 </div>
             </form>
         </section>
     </main>
     <div id="pop-up-container">
-        <section class="pop-up-body">
+        <section class="pop-up-body" promo="RFO 1-BR">
             <div class="pop-up-item-container">
-                <img src="#" alt="" id="pop-up-image">
+                <img src="#" alt="" class="pop-up-image">
+            </div>
+            <div class="pop-up-paragraphs">
+                <p>
+                    Enjoy a solid financial investment in the form of a condo unit within the low-density community of One Spatial Iloilo – now offering Go Green deals. For as low as P9,500/month, you can have your own 1-BR unit!
+                </p>
+                <p>
+                    With a 30-month DP extension via 10/90 bank financing, One Spatial Iloilo makes your life goal more achievable. Live in it, rent it out – this condo with relaxing amenities and green open spaces is an attractive investment that appreciates over time.
+                </p>
+                <p>
+                    LS No. 033535 | Completion Date: Oct. 2020 | Owned and developed by Filinvest Land, Inc. | R. Mapa St., Brgy. Tabucan, Mandurriao, Iloilo City
+                </p>
+            </div>
+        </section>
+        <section class="pop-up-body" promo="Non-RFO 2-BR">
+            <div class="pop-up-item-container">
+                <img src="#" alt="" class="pop-up-image">
+            </div>
+            <div class="pop-up-paragraphs">
+                <p>
+                    How far can P12,000/month take you? With One Spatial Iloilo’s Go Green deals, you can own a 2-BR unit that you can use or rent out!
+                </p>
+                <p>
+                    With this limited-time offer, you also get to enjoy a 30-month DP extension via 10/90 bank financing. Living in this low-density community will give you various venues for an active lifestyle and healthy living like a wide array of amenities, refreshing environs, and green open spaces.
+                </p>
+                <p>
+                    LS No. 033535 | Completion Date: Oct. 2020 | Owned and developed by Filinvest Land, Inc. | R. Mapa St., Brgy. Tabucan, Mandurriao, Iloilo City
+                </p>
             </div>
         </section>
     </div>

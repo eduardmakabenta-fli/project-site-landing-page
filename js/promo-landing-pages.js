@@ -7,8 +7,8 @@ const sellerEmailAddress = document.getElementById("sellerEmailAddress")
 // PROMO VARIABLES
 const promoImage = document.getElementsByClassName("promo-image")
 const popUpContainer = document.getElementById("pop-up-container")
-const popUpImage = document.getElementById("pop-up-image")
-
+const popUpImage = document.getElementsByClassName("pop-up-image")
+const popUpBody = document.getElementsByClassName("pop-up-body")
 
 const promos = document.getElementsByClassName("promo-select-button")
 const promoDetails = document.getElementsByClassName("promo-details")
@@ -35,8 +35,22 @@ hasSellerInfo.addEventListener("click",function(){
 // LOOP THROUGH EACH PROMO IMAGE AND PLACE AN EVENT LISTENER ON ALL OF THEM
 for(let i=0;i<promoImage.length;i++){
     promoImage[i].addEventListener("click",function(){
+        
         popUpContainer.style.display = "grid";
-        popUpImage.src = this.src;
+        let promo = promoImage[i].getAttribute("promo");
+
+        for(let x=0;x<popUpBody.length;x++){
+
+            if (promo == popUpBody[x].getAttribute("promo")){
+                
+                popUpImage[x].src = this.src;
+                popUpBody[x].style.display = "flex";
+            }
+            else{
+                popUpBody[x].style.display = "none";
+            }
+        }
+
         return
     })
 }
@@ -70,14 +84,10 @@ function resetPromoOutline(elementClass){
 for (let i=0;i<promos.length;i++){
     promos[i].addEventListener("click",function(){
         resetPromoOutline(promoDetails)
-        this.parentElement.style.outline = "thick solid #0000FF";
+        this.parentElement.style.outline = "2px solid #5f6a6a";
         console.log(this.getAttribute("promo"))
         selectedPromo.value = this.getAttribute("promo");
         console.log(selectedPromo)
         return
     })
 }
-
-promos = [
-    ""
-]

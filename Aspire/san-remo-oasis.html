@@ -4,55 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marina Spatial Promo Landing Page Form</title>
+    <title>AspireByFilinvest | Sanremo Oasis</title>
     <script src="../js/promo-landing-pages.js" defer></script>
+    <script src="../js/validator.js" defer></script>
     <link rel="stylesheet" href="../css/promo-landing-pages.css">
 </head>
 <body>
     <header style="background-color: #095C8C;padding:1em 0;">
         <section>
-            <h1 style="color: #FFFFFF">San Remo Oasis</h1>
+            <h1 style="color: #FFFFFF">Sanremo Oasis</h1>
         </section>
     </header>
     <main>
         <section class="caption">
             <p class="caption-paragraph">
-                Looking for a highly appreciating investment with a strategic location and a pocket-friendly price? Choose Sanremo Oasis – now offering Seize the Dream deals!
+                A highly appreciating investment within the integrated City di Mare Township is now available at a pocket-friendly price. Sanremo Oasis presents Color Life Green deals! 
             </p>
             <p class="caption-paragraph">
-                Enjoy a 35-month DP extension for a limited time only – 3% in 5 months and 7% in 30 months via 10/90 bank financing. Upon payment of 2.5% DP, you can already move into your RFO 2-BR unit. Prices start at P40,200 in 5 months and P17,200 in 30 months. In no time, you can enjoy an investment within the integrated City di Mare township with values that increase over time. Take advantage of this offer today!
+                Enjoy a 35-month DP extension for a limited time only – 3% in 5 months and 7% in 30 months via 10/90 bank financing. Upon payment of 2.5% DP, you can already move into your RFO 2-BR unit. Prices start at P40, 200 in 5 months and P17, 200 in 30 months. In no time, you can enjoy the resort-inspired lifestyle it offers – with refreshing amenities, lush open spaces, and low-density environs – making it an attractive asset. Avail now! Offer until August 31, 2021 only. 
             </p>
             <p class="caption-paragraph">
-                Offer until July 31, 2021 only. Avail now! PM us or call (0917) 545-7788 / (0917) 595-7788. Visit https://aspirebyfilinvest.com/project/sanremo-oasis for more info. Terms and conditions apply. 
-            </p>
-            <p class="caption-paragraph">
-                LS No. 30348 | Completed: Sep 2017 | A joint venture development of Filinvest Land, Inc. and the City Government of Cebu | City di Mare, South Road Properties, Cebu City
+                LS No. 33616 (Bldg. 1) | Completed: Sep 2017 | A joint venture development of Filinvest Land, Inc. and the City Government of Cebu | City di Mare, South Road Properties, Cebu City 
             </p>
         </section>
-        <h3 style="text-align: center;">Promos</h3>
+        <h3 style="text-align: center;">Available Promos</h3>
         <section class="promos">
             <article class="promo-details">
-                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7B8732693b-c38d-4323-b8b2-3cbb1151fe6d%7D_2021-07-CM-2021-03035_Sanremo_RFO_Promo_FA-optimized.jpg" 
-            alt="San Remo Oasis - RFO Promo" class="promo-image">
+                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7B36c44e96-f88c-40de-87d8-b55d525ce966%7D_2021-08_Sanremo-Oasis-RFO-2BR-Promo-optimized.jpg" alt="Sanremo Oasis RFO 2-BR Promo" class="promo-image">
+                <button class="promo-select-button" promo="RFO 2-BR">Select</button>
             </article>
         </section>
         <section id="lead-form-container">
-            <form action="">
+            <form action="https://s192516.t.eloqua.com/e/f2">
                 <div>
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName">
+                    <input type="text" id="firstName" name="firstName" required="required">
                 </div>
                 <div>
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName">
+                    <input type="text" id="lastName" name="lastName" required="required">
                 </div>
                 <div>
                     <label for="mobileNumber">Mobile Number</label>
-                    <input type="tel" id="mobileNumber" name="mobileNumber">
+                    <input minlength="11" maxlength="12" pattern="[0-9]+" type="text" id="mobileNumber" name="mobileNumber">
                 </div>
                 <div>
                     <label for="emailAddress">Email Address</label>
-                    <input type="text" id="emailAddress" name="emailAddress">
+                    <input type="email" id="emailAddress" name="emailAddress" required="required">
                 </div>
                 <div>
                     <input style="display:inline;" type="checkbox" name="hasSellerInfo" id="hasSellerInfo" unchecked>
@@ -61,23 +59,70 @@
                 <section id="seller-information">
                     <div>
                         <label for="sellerName">Seller Name</label>
-                        <input type="text">
+                        <input type="text" id="sellerName" name="sellerName">
                     </div>
                     <div>
                         <label for="">Seller Email Address</label>
-                        <input type="email">
+                        <input type="email" id="sellerEmailAddress" name="sellerEmailAddress">
                     </div>
                 </section>
                 <div>
-                    <input type="submit" value="Submit" style="display:block;margin:0 auto;">
+                    <input type="hidden" name="projectName" value="Sanremo Oasis">
+                    <input type="hidden" name="selectedPromo" id="selected-promo">
+                    <input type="hidden" name="elqFormName" value="projectLandingPagePromosForm">
+                    <input type="hidden" name="elqSiteID" value="192516">
+                    <input type="submit" value="Submit" style="display:block;margin:0 auto;" disabled>
                 </div>
             </form>
         </section>
     </main>
     <div id="pop-up-container">
-        <section style="background-color:white;">
-            <img src="#" alt="" id="pop-up-image">
+        <section class="pop-up-body">
+            <div class="pop-up-item-container">
+                <img src="#" alt="" class="pop-up-image">
+            </div>
+            <div class="pop-up-paragraphs">
+                <p>
+                    A highly appreciating investment within the integrated City di Mare township is now available at a pocket-friendly price. Sanremo Oasis presents Color Life Green deals!
+                </p>
+
+                <p>
+                    Enjoy a 35-month DP extension for a limited time only – 3% in 5 months and 7% in 30 months via 10/90 bank financing. Upon payment of 2.5% DP, you can already move into your RFO 2-BR unit. Prices start at P40,200 in 5 months and P17,200 in 30 months. In no time, you can enjoy the resort-inspired lifestyle it offers – with refreshing amenities, lush open spaces, and low-density environs – making it an attractive asset.
+                </p>
+                <p>
+                    Offer until August 31, 2021 only. Avail now! PM us or call (0917) 545-7788 / (0917) 595-7788. Visit <a href="https://aspirebyfilinvest.com/project/sanremo-oasis" target="_blank">https://aspirebyfilinvest.com/project/sanremo-oasis</a>a> for more info. Terms and conditions apply.
+                </p>
+
+                <p>
+                    #SanremoOasis #ColorLifeGreen #AspireByFilinvest
+                </p>
+                <p>
+                    LS No. 33616 (Bldg. 1) | Completed: Sep 2017 | A joint venture development of Filinvest Land, Inc. and the City Government of Cebu | City di Mare, South Road Properties, Cebu City
+                </p>
+            </div>
         </section>
     </div>
+
+    <script type='text/javascript'><!--//
+        var timerId = null, timeout = 5;
+        //--></script>
+        <script type='text/javascript'><!--//
+        function WaitUntilCustomerGUIDIsRetrieved() {
+        if (!!(timerId)) {
+            if (timeout == 0) {
+        return;
+        }
+        if (typeof this.GetElqCustomerGUID === 'function') {
+                document.forms["projectLandingPagePromosForm"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+        return;
+        }
+        timeout -= 1;
+        }
+        timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
+        return;
+        }
+        window.onload = WaitUntilCustomerGUIDIsRetrieved;
+        _elqQ.push(['elqGetCustomerGUID']);
+        //--></script>
 </body>
 </html>

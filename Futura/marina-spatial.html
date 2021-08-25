@@ -12,33 +12,24 @@
 <body>
     <header>
         <section>
-            <h1 style="color: #b22222">Marina Spatial</h1>
+            <h1 style="color:#b22222;"><span style="font-weight:100;">Marina</span> Spatial</h1>
         </section>
     </header>
     <main>
         <section class="caption">
             <p class="caption-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam nihil quis nam! Fugiat dolores iste commodi accusantium, molestias quo sequi rerum inventore, dolorem error laborum consequuntur, voluptate nostrum tempore!
-            </p>
-            <p class="caption-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nisi harum aliquam excepturi natus, iure placeat consequatur illo doloremque fuga consectetur ullam ipsa fugit corrupti quas magnam ut est temporibus.
-            </p>
-            <p class="caption-paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, doloremque reprehenderit ex quia harum molestias eum libero voluptate pariatur? Tempore soluta, at maxime aut enim deleniti veniam aperiam eveniet accusamus.
-            </p>
-            <p class="caption-paragraph">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolores voluptates corrupti est omnis corporis quibusdam accusamus optio. Ducimus at explicabo tenetur. Delectus, possimus id dolorum voluptas praesentium odit veniam?
+                Marina Spatial is a smart-value, mid-rise condo community that features spacious units, refreshing open areas, and a range of amenities amid low-density environs. With an enviable location near the Dumaguete bayfront, it makes an ideal home for students and young professionals and is well-positioned to be an income-generating investment.
             </p>
         </section>
         <h3 style="text-align: center;">Available Promos</h3>
         <section class="promos">
             <article class="promo-details">
-                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7B32e96536-701a-4872-a3cf-170471bfa8a5%7D_2021-10_Marina-Spatial-Non-RFO-Stretched-DP-optimized.jpg" alt="Marina Spatial Non-RFO Stretched Downpayment" class="promo-image">
-                <button class="promo-select-button" promo="test1">Select</button>
+                <img src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7B32e96536-701a-4872-a3cf-170471bfa8a5%7D_2021-10_Marina-Spatial-Non-RFO-Stretched-DP-optimized.jpg" alt="Marina Spatial Non-RFO Stretched Downpayment" class="promo-image" promo="Non-RFO">
+                <button class="promo-select-button" promo="Non-RFO">Select</button>
             </article>
         </section>
         <section id="lead-form-container">
-            <form action="https://s192516.t.eloqua.com/e/f2" onsubmit="validateFields()">
+            <form action="https://s192516.t.eloqua.com/e/f2">
                 <div>
                     <h3>Interested? Inquire now!</h3>
                 </div>
@@ -77,15 +68,26 @@
                     <input type="hidden" name="selectedPromo" id="selected-promo">
                     <input type="hidden" name="elqFormName" value="projectLandingPagePromosForm">
                     <input type="hidden" name="elqSiteID" value="192516">
-                    <input type="submit" value="Submit" style="display:block;margin:0 auto;">
+                    <input type="submit" value="Submit" style="display:block;margin:0 auto;" disabled>
                 </div>
             </form>
         </section>
     </main>
     <div id="pop-up-container">
-        <section class="pop-up-body">
+        <section class="pop-up-body" promo="Non-RFO">
             <div class="pop-up-item-container">
-                <img src="#" alt="" id="pop-up-image">
+                <img src="#" alt="" class="pop-up-image">
+            </div>
+            <div class="pop-up-paragraphs">
+                <p>
+                    Did you know that for as low as P7,000 monthly DP, you can already own a condo unit? With Marina Spatial’s Go Green deals, you can fulfill your dream of owning a property complete with refreshing amenities and low-density environs.
+                </p>
+                <p>
+                    For a limited time only, enjoy low monthly payment offers with a 30-month DP extension via 10/90 bank financing. A relaxing sanctuary at Marina Spatial with over 73% dedicated to open spaces can easily become your home. To boot, its location within Marina Town gives you easy access to a shopping hub and dining strip, making the new normal life convenient.
+                </p>
+                <p>
+                    LS No. 17854 | Completion Date: Dec 2021 | Owned and developed by Filinvest Land, Inc. | EJ Blanco Ave., Brgy. Piapi, Dumaguete City, Negros Oriental
+                </p>
             </div>
         </section>
     </div>

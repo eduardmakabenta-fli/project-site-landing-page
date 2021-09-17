@@ -1,45 +1,46 @@
 :root{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+*{
+    margin:0;
+    padding:0;
+}
 body{
     background-color:#f0f0f0;
 }
 header{
     background-color:#FFFFFF;
     margin:0;
-    padding: 1em 1em 1em 1em;
 }
 header section h1{
     padding:0;
     margin:0 0 0 0;
     text-align:center;
 }
+header section img{
+    width:100%;
+    max-width:1200px;
+}
 .futura-heading{
     color:#b22222;
 }
-
 main{
     background-color:#FFFFFF;
     padding:1em 1em 1em 1em;
     margin:0;
 }
-
 main section{
     padding:0;
     margin:0;
 }
-
 main section p.caption-paragraph{
     padding:0 1em;
     margin: 0 0 1em 0;
 }
-
 /******* FORM STYLING *******/
-
 section#lead-form-container{
     margin:1em 0 0 0;
 }
-
 form{
     border:1px solid #e5e4e2;
     border-radius:3px;
@@ -48,7 +49,6 @@ form{
     padding:1em;
     margin:1em 0;
 }
-
 form div{
     margin: 0 0 1em 0;
 }
@@ -68,7 +68,6 @@ input[type="submit"]{
 form section#seller-information{
     display:none;
 }
-
 /*   POP UP STYLING   */
 article.promo-details img.promo-image{
     width:100%;
@@ -96,23 +95,25 @@ div#pop-up-container{
     justify-items:center;
     align-items: center;
 }
-
-section.pop-up-body{
+section#pop-up-body{
     background-color:#FFFFFF;
-    display:none;
+    display:flex;
     flex-direction: column;
     margin:1em 2em;
 }
-
-img.pop-up-image{
+img#pop-up-image{
     width:100%;
     max-width:600px;
     display:block;
 }
-
-div.pop-up-paragraphs{
+div#pop-up-paragraphs{
     padding:1em;
 }
+div#pop-up-paragraphs p{
+    margin:0 0 1em 0;
+}
+
+/* DEVICES THAT HAVE A WIDTH OF 700px AND ABOVE */
 
 @media only screen and (min-width:700px){
     body{
@@ -123,39 +124,36 @@ div.pop-up-paragraphs{
     }
     header{
         width:100%;
-        max-width:600px;
+        max-width:900px;
         box-sizing: border-box;
     }
     main{
         width:100%;
-        max-width:600px;
+        max-width:900px;
         box-sizing: border-box;
     }
-    /*  PROMO SECTION STYLING  */
+    /*   PROMO SECTION STYLING   */
     section.promos{
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
         grid-template-rows:auto;
         grid-gap:1em;
     }
-
-    div.pop-up-item-container{
+    div#pop-up-item-container{
         width:100%;
-    }
-
-    
-    section.pop-up-body{
+    }    
+    section#pop-up-body{
         flex-direction: row;
         width:100%;
         max-width:700px;
     }
-
     img#pop-up-image{
         width:100%;
         max-width:600px;
     }
 }
 
+/* DEVICES THAT HAVE A WIDTH OF 1200PX AND ABOVE */
 @media only screen and (min-width:1200px){
     img.pop-up-image{
         display:block;
@@ -167,12 +165,10 @@ div.pop-up-paragraphs{
         width:100%;
         max-width:1080px;
     }
-
-    section.pop-up-body div{
+    section#pop-up-body div{
         width:50%;
     }
-
-    section.pop-up-body div p{
+    section#pop-up-body div p{
         padding:0 1em;
     }
 }

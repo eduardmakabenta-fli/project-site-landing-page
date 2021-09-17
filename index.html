@@ -12,7 +12,7 @@
 <body>
     <header>
         <section>
-            <h1 style="color: #b22222">Project Name Here</h1>
+            <img class="banner-image" src="https://img03.en25.com/EloquaImages/clients/FilinvestLandInc/%7B94ef68b9-2ca1-42d0-8096-39ac17477969%7D_Eloqua-NewLeaf-landing-page-Diana.jpg" alt="Placeholder Image">
         </section>
     </header>
     <main>
@@ -31,11 +31,8 @@
             </p>
         </section>
         <h3 style="text-align: center;">Available Promos</h3>
-        <section class="promos">
-            <article class="promo-details">
-                <img src="img/Placeholder_Image.jpg" alt="" class="promo-image">
-                <button class="promo-select-button" promo="test1">Select</button>
-            </article>
+        <section class="promos" id="promos-container">
+            
         </section>
         <section id="lead-form-container">
             <form action="https://s192516.t.eloqua.com/e/f2" onsubmit="validateFields()">
@@ -73,19 +70,26 @@
                     </div>
                 </section>
                 <div>
-                    <input type="hidden" name="projectName" value="Marina Spatial">
+                    <!-- Hidden Fields Start -->
+                    <input type="hidden" name="projectName" value="Project Name Here">
+                    <input type="hidden" name="brand" value="Brand Here">
                     <input type="hidden" name="selectedPromo" id="selected-promo">
+                    <input type="hidden" name="sellerMobileNumber">
+                    <input type="hidden" name="sellerDesignation">
                     <input type="hidden" name="elqFormName" value="projectLandingPagePromosForm">
                     <input type="hidden" name="elqSiteID" value="192516">
+                    <!-- Hidden Fields End -->
                     <input type="submit" value="Submit" style="display:block;margin:0 auto;">
                 </div>
             </form>
         </section>
     </main>
     <div id="pop-up-container">
-        <section class="pop-up-body">
-            <div class="pop-up-item-container">
+        <section id="pop-up-body">
+            <div id="pop-up-item-container">
                 <img src="#" alt="" id="pop-up-image">
+            </div>
+            <div id="pop-up-paragraphs">
             </div>
         </section>
     </div>
@@ -111,5 +115,30 @@
         window.onload = WaitUntilCustomerGUIDIsRetrieved;
         _elqQ.push(['elqGetCustomerGUID']);
         //--></script>
+
+        <script>
+            let availablePromos = [
+                {
+                    "promoName":"PromoTest2",
+                    "promoImage":"img/Placeholder_Image.jpg",
+                    "promoDetails":{
+                        "promoType":"RFO",
+                        "promoCaption":`
+                            <p>lorem ipsum</p>
+                        `
+                    }
+                },
+                {
+                    "promoName":"PromoTest1",
+                    "promoImage":"img/Placeholder_Image.jpg",
+                    "promoDetails":{
+                        "promoType":"RFO",
+                        "promoCaption":`
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit animi, natus nobis cumque perferendis eius cupiditate sit velit facilis quibusdam eos aliquid ratione dicta, doloremque, voluptates quisquam nostrum unde?</p>
+                        `
+                    }
+                }
+            ];
+        </script>
 </body>
 </html>
